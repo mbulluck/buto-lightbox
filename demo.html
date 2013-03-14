@@ -54,13 +54,13 @@ Demo for Buto lightbox js which is a lightbox based integration of the buto plat
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- make sure you have jquery loaded before you load the buto plugin-->
         
         <!-- required -->
-        <script src="js/buto-lightbox.min.js"></script> 
+        <script src="js/buto-lightbox.js"></script> 
         <!-- required -->
         
         <script>
             $(document).ready(function() { //best to wait for dom ready I suppose
                 //use the css selector of choice to pick up your elements
-                $('div.buto-lightbox-here-please').butoLightbox();
+                $('div.buto-lightbox-here-please').butoLightbox({api_uri:'http://api.buto.tv/v2/video'});
             });
         </script>
     </body>

@@ -56,10 +56,10 @@
     */
    $.fn.butoLightbox = function(options) {
        var settings = $.extend({// Create some defaults, extending them with any options that were provided
-           api_uri: '//api.buto.tv/v2/video',
-           loading_gif_uri: 'img/ajax-loader.gif'
+           api_uri: '//api.buto.tv/v2/video'
        }, options);
        return this.each(function() {
+           
            var element = $(this); //assign to a slightly global var 'cos we'll need it later when we go into a deeper scope
 
            //get the video_id
@@ -70,9 +70,10 @@
 
            //get video data
            var video_response = getObjectData(object_id, settings.api_uri);
-
+      
            //on successful retrieval of the video json
            video_response.success(function(data) {
+               console.log(data);
                //create an <a> element
                var anchor = $('<a>').prop('href', '//play.buto.tv/' + object_id).addClass('buto-lightbox-anchor').prop('title', data.video_title);
 
