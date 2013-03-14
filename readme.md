@@ -34,7 +34,8 @@ basic usage:
 Function will use basic dimensions that you've set of the container element
 
 **NB** the *data-id* attribute of our DIV which must contain the unique Buto video_id otherwise the plugin won't know which video to load
-    
+
+**NB** Don't include the /src folder in your project, it's just there for you to browse through and debug with    
 
 Demo
 ----
