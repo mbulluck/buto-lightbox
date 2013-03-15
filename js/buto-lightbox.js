@@ -15,6 +15,7 @@
 * inside ready to play.
 * The JS will call the Buto api to get some data about the video such
 * as poster frame uri, video uri in our CDN.  It's all CORS safe so don't worry
+* our api supports Jsonp so that's how we get the ie6+ support
 * @link text http://get.buto.tv
 * 
 * Included libraries thanks to:
@@ -43,9 +44,10 @@
     */
    var getObjectData = function(object_id, uri) {
        return $.ajax({
-           dataType: "json",
+           dataType: "jsonp",
            type: 'get',
-           url: uri + '/' + object_id
+           jsonpCallback:'callback' + object_id + 'a', //each callback has to have a uniqiue name otherwise the namespace gets poluted and things go very funky indeed
+           url: uri + '/' + object_id + '.jsonp?callback=?' //buto's v2 api supports JsonP - oh yeah!!!!
        });
    };
 
@@ -70,12 +72,12 @@
 
            //get video data
            var video_response = getObjectData(object_id, settings.api_uri);
-      
+           
            //on successful retrieval of the video json
-           video_response.success(function(data) {
-               console.log(data);
+           video_response.success(function(data) {  
+               
                //create an <a> element
-               var anchor = $('<a>').prop('href', '//play.buto.tv/' + object_id).addClass('buto-lightbox-anchor').prop('title', data.video_title);
+               var anchor = $('<a>').prop('href', '//play.buto.tv/' + object_id).prop('title', data.video_title);
 
                //create poster frame image
                var image = $('<img>').prop('src', data.uri.poster_frame).prop('alt', data.video_title);

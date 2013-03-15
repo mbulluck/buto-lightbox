@@ -10,6 +10,10 @@ inside ready to play.
 The JS will call the Buto API to get some data about the video such
 as poster frame uri, video uri in our CDN.  It's all CORS safe so don't worry.
 
+Our api supports Jsonp so that's how we get the ie6+ support
+
+Tested in all sorts of browsers, even works in ie6!
+
 http://get.buto.tv
 
 Thanks

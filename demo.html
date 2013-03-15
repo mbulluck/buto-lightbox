@@ -13,7 +13,8 @@ Demo for Buto lightbox js which is a lightbox based integration of the buto plat
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/normalize.css">
 
-        <style type="text/css"><!-- manual styles only to make this page look better -->
+        <style type="text/css">
+            /* manual styles only to make this page look better */
             body {padding-top: 50px; }
             div.buto-lightbox-here-please {border:1px solid black;width:451px;height:254px}
             h1{font-size:larger}
@@ -30,12 +31,13 @@ Demo for Buto lightbox js which is a lightbox based integration of the buto plat
 
             <div id='content' class="center clearfix">
                 <h1>Buto Lightbox Embed Demo</h1>
-                <p><a href='http://get.buto.tv'>http://get.buto.tv</a></p>
-                <p>Here are a load of dynamically instanced poster frames and lightboxed videos</p>
-
+                <p><a href='http://get.buto.tv'>Buto is an enterprise online video platform</a></p>
+                
+                <p>Here are a load of dynamically instanced poster frames, click on them get the video in a lightbox.</p>
+                <p>The javascript gets the video data from our API</p>
                 <p class='my-title'>Brian's Buto</p>
                 <div class='buto-lightbox-here-please' data-id='12345'><!-- video here --></div>
-                <p class='my-title'>Akaal Kaur in Wolverhampton</p>
+                <p class='my-title'>Akaal in Wolverhampton</p>
                 <div class='buto-lightbox-here-please' data-id='Wl9Pr'><!-- video here --></div>
                 <p class='my-title'>Akaal and Nihaal</p>
                 <div class='buto-lightbox-here-please' data-id='d9ZwH'><!-- video here --></div>
@@ -54,13 +56,13 @@ Demo for Buto lightbox js which is a lightbox based integration of the buto plat
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- make sure you have jquery loaded before you load the buto plugin-->
         
         <!-- required -->
-        <script src="js/buto-lightbox.js"></script> 
+        <script src="js/buto-lightbox.js" ></script> 
         <!-- required -->
         
         <script>
-            $(document).ready(function() { //best to wait for dom ready I suppose
-                //use the css selector of choice to pick up your elements
-                $('div.buto-lightbox-here-please').butoLightbox({api_uri:'http://api.buto.tv/v2/video'});
+            $(document).ready(function() { //best to wait for DOM ready
+                //use the css selector of choice to pick up your elements               
+                $('div.buto-lightbox-here-please').butoLightbox();
             });
         </script>
     </body>
