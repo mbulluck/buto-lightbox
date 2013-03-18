@@ -1,0 +1,69 @@
+<!--
+Demo for Buto lightbox js which is a lightbox based integration of the buto platform
+#45935617
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Buto Lightbox embed demo</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="Jujhar Singh">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/normalize.css">
+
+        <style type="text/css">
+            /* manual styles only to make this page look better */
+            body {padding-top: 50px; }
+            div.buto-lightbox-here-please {border:1px solid black;width:451px;height:254px}
+            h1{font-size:larger}
+            p.my-title{margin-bottom: 0px;margin-top:20px}
+        </style>
+
+        <!-- required -->
+        <link rel="stylesheet" type="text/css" href="css/buto-lightbox.css" media="screen" /> 
+        <!-- required -->
+
+    </head>
+    <body>        
+        <div class='content'>
+
+            <div id='content' class="center clearfix">
+                <h1>Buto Lightbox Embed Demo</h1>
+                <p><a href='http://get.buto.tv'>Buto is an enterprise online video platform</a></p>
+                
+                <p>Here are a load of dynamically instanced poster frames, click on them get the video in a lightbox.</p>
+                <p>The javascript gets the video data from our API</p>
+                <p class='my-title'>Brian's Buto</p>
+                <div class='buto-lightbox-here-please' data-id='12345'><!-- video here --></div>
+                <p class='my-title'>Akaal in Wolverhampton</p>
+                <div class='buto-lightbox-here-please' data-id='Wl9Pr'><!-- video here --></div>
+                <p class='my-title'>Akaal and Nihaal</p>
+                <div class='buto-lightbox-here-please' data-id='d9ZwH'><!-- video here --></div>
+                <p class='my-title'>Nihaal near a beach</p>
+                <div class='buto-lightbox-here-please' data-id='C6YP8'><!-- video here --></div>
+                <p class='my-title'>Stalking cats</p>
+                <div class='buto-lightbox-here-please' data-id='mmV6l'><!-- video here --></div>
+                <p class='my-title'>Akaal on a beach</p>
+                <div class='buto-lightbox-here-please' data-id='HzLmM'><!-- video here --></div>
+                <p class='my-title'>I am a horse, feed me</p>
+                <div class='buto-lightbox-here-please' data-id='2pgGq'><!-- video here --></div>
+                <br/>                
+            </div>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- make sure you have jquery loaded before you load the buto plugin-->
+        
+        <!-- required -->
+        <script src="js/buto-lightbox.min.js" ></script> 
+        <!-- required -->
+        
+        <script>
+            $(document).ready(function() { //best to wait for DOM ready
+                //use the css selector of choice to pick up your elements               
+                $('div.buto-lightbox-here-please').butoLightbox();
+            });
+        </script>
+    </body>
+</html>
