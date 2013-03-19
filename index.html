@@ -19,6 +19,8 @@ Demo for Buto lightbox js which is a lightbox based integration of the buto plat
             div.buto-lightbox-here-please {border:1px solid black;width:451px;height:254px}
             h1{font-size:larger}
             p.my-title{margin-bottom: 0px;margin-top:20px}
+            .buto-lightbox-here-please{margin:0 auto}
+            .my-title {text-align:center}
         </style>
 
         <!-- required -->
@@ -32,15 +34,17 @@ Demo for Buto lightbox js which is a lightbox based integration of the buto plat
             <div id='content' class="center clearfix">
                 <h1>Buto Lightbox Embed Demo</h1>
                 <p><a href='http://get.buto.tv'>Buto is an enterprise online video platform</a></p>
+
+                <p>The Buto lightbox embed plugin has been created and tested with jQuery 1.9x.  It will search the page for any elements (usually divs) that you specify which have a buto video_id.  It will then talk to the Buto API and get the poster frames for that video.  When you click on the poster frame you'll get a lightbox (courtesy of <a href="https://github.com/jackmoore/colorbox/">jackmoore</a>) with the video in in.</p>
                 
-                <p>Here are a load of dynamically instanced poster frames, click on them get the video in a lightbox.</p>
-                <p>The javascript gets the video data from our API</p>
+                <h2>Usage</h2>
+                <p>Ensure you have jquery 1.9x loaded first, it should work fine with earlier versions but is untested as such</p>
+                <script src="https://gist.github.com/ButoVideo/5194682.js"></script>
+                <h2>Examples</h2>
                 <p class='my-title'>Brian's Buto</p>
                 <div class='buto-lightbox-here-please' data-id='12345'><!-- video here --></div>
                 <p class='my-title'>Akaal in Wolverhampton</p>
                 <div class='buto-lightbox-here-please' data-id='Wl9Pr'><!-- video here --></div>
-                <p class='my-title'>Akaal and Nihaal</p>
-                <div class='buto-lightbox-here-please' data-id='d9ZwH'><!-- video here --></div>
                 <p class='my-title'>Nihaal near a beach</p>
                 <div class='buto-lightbox-here-please' data-id='C6YP8'><!-- video here --></div>
                 <p class='my-title'>Stalking cats</p>
