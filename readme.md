@@ -1,8 +1,8 @@
 Buto.tv lightbox plugin
 =======================
 
-Buto.tv lightbox plugin created and tested with jquery 1.9.0
-will create a image of the poster frame of a Buto video on the Buto.tv platform
+Buto.tv lightbox plugin created and tested with jquery 1.9.x
+It will create a image of the poster frame of a Buto video on the Buto.tv platform
 
 When you click on the image then you get a lightbox with the video 
 inside ready to play.
@@ -39,16 +39,16 @@ Function will use basic dimensions that you've set of the container element
 
 **NB** the *data-id* attribute of our DIV which must contain the unique Buto video_id otherwise the plugin won't know which video to load
 
-**NB** Don't include the /src folder in your project, it's just there for you to browse through and debug with    
+**NB** Don't include the /src folder in your project, it's just there for you to browse through and debug with.
 
 Demo
 ----
-Have a look at demo.html for some basic demo usage
+Have a look at /demo.html or http://butovideo.github.com/buto-lightbox/ for some basic demo usage
 
 
 License
 -------
 
-License is MIT, go nuts; 'cos that's how we roll here at Buto
+License is MIT, go nuts. That's how we roll here at Buto.
 
 http://opensource.org/licenses/mit-license.php
