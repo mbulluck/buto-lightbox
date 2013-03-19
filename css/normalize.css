@@ -24,7 +24,7 @@ header h1 { color: black; font-size: 2em; line-height: 1.1em; display: inline-bl
 
 div#content { background: white; border: 1px solid #ccc; border-width: 0 1px 1px; margin: 0 auto; padding: 40px 50px 40px; width: 738px; }
 
-footer { color: #999; padding-top: 40px; font-size: 0.8em; text-align: center; }
+footer { color: #999; padding-top: 40px;padding-bottom: 20px; font-size: 0.8em; text-align: center; }
 
 body { font-family: sans-serif; font-size: 1em; }
 
