@@ -5,7 +5,7 @@ Demo for Buto lightbox js which is a lightbox based integration of the buto plat
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Buto Lightbox embed demo</title>
+        <title>Buto Lightbox jquery plugin</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="author" content="Jujhar Singh">
         <meta name="HandheldFriendly" content="True">
@@ -32,11 +32,12 @@ Demo for Buto lightbox js which is a lightbox based integration of the buto plat
         <div class='content'>
 
             <div id='content' class="center clearfix">
-                <h1>Buto Lightbox Video Embed Demo</h1>
+                <h1>Buto Lightbox Video Embed jQuery plugin</h1>
                 <p><a href='http://get.buto.tv' title="Buto is an enterprise online video platform">Buto is an enterprise online video platform</a></p>
                 <p class='my-title'>Brian's Buto</p>
                 <div class='buto-lightbox-here-please' data-id='12345'><!-- video here --></div>
                 <p>The Buto lightbox embed plugin has been created and tested with jQuery 1.9x.  It will search the page for any elements (usually divs) that you specify which have a Buto video id (eg 12345) .  It will then talk to the Buto API and get the poster frames for that video.  When you click on the poster frame you'll get a lightbox (courtesy of <a href="https://github.com/jackmoore/colorbox/">jackmoore</a>) with the video in in.</p>
+                <p>It's lightweight and fast, designed to be async and not block DOM render (in a much as is possible)</p>
                 
                 <h2>Usage</h2>
                 <p>Ensure you have jquery 1.9x loaded first, it should work fine with earlier versions but is untested as such</p>
