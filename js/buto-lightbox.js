@@ -77,7 +77,7 @@
            video_response.success(function(data) {  
                
                //create an <a> element
-               var anchor = $('<a>').prop('href', '//play.buto.tv/' + object_id).prop('title', data.video_title);
+               var anchor = $('<a>').prop('href', '//embed.buto.tv/' + object_id).prop('title', data.video_title);
 
                //create poster frame image
                var image = $('<img>').prop('src', data.uri.poster_frame).prop('alt', data.video_title);
