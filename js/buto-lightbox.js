@@ -36,7 +36,7 @@
 (function($) {
    /**
     * 
-    * methodGet's the json api data from the BUTO api
+    * method Get's the json api data from the BUTO api
     * @private
     * @param string object_id the buto video/playlist/livestream id
     * @param string uri the uri to the buto api 
@@ -77,11 +77,12 @@
            video_response.success(function(data) {  
                
                //create an <a> element
-               var anchor = $('<a>').prop('href', '//embed.buto.tv/' + object_id).prop('title', data.video_title);
+               var anchor = $('<a>').prop('href', '//embed.buto.tv/' + object_id).prop('title', data.media_title);
 
                //create poster frame image
-               var image = $('<img>').prop('src', data.uri.poster_frame).prop('alt', data.video_title);
-               if (element.height() === 0 || element.height() === undefined) { //if the height is not specified (width will always be specified as it will default to parent width, but height will be 0 if not speccd)
+               var image = $('<img>').prop('src', data.uri.poster_frame).prop('alt', data.media_title);
+
+               if (element.height()===0 || element.height() === undefined) { //if the height is not specified (width will always be specified as it will default to parent width, but height will be 0 if not speccd)
                    image.prop('height', data.published_height).prop('width', data.published_width); //use json width & height
                }
                else {
