@@ -65,7 +65,7 @@
            
            //on successful retrieval of the video json
            video_response.success(function(data) {  
-               
+
                //create an <a> element
                var anchor = $('<a>').prop('href', '//embed.buto.tv/' + object_id).prop('title', data.media_title);
 
