@@ -74,13 +74,22 @@
            var video_response = getObjectData(object_id, settings.api_uri);
            
            //on successful retrieval of the video json
-           video_response.success(function(data) {  
-               
+           video_response.success(function(data) {
+
+               //#1957 - enable used of media or video title
+               var title = data.media_title; //default to media title
+               if (options !== undefined && options.hasOwnProperty('title')) {
+                   //optionally set title
+                   if (options.title === 'video') {
+                       title = data.video_title;
+                   }
+               }
+
                //create an <a> element
-               var anchor = $('<a>').prop('href', '//embed.buto.tv/' + object_id).prop('title', data.media_title);
+               var anchor = $('<a>').prop('href', '//embed.buto.tv/' + object_id).prop('title', title);
 
                //create poster frame image
-               var image = $('<img>').prop('src', data.uri.poster_frame).prop('alt', data.media_title);
+               var image = $('<img>').prop('src', data.uri.poster_frame).prop('alt', title);
 
                if (element.height()===0 || element.height() === undefined) { //if the height is not specified (width will always be specified as it will default to parent width, but height will be 0 if not speccd)
                    image.prop('height', data.published_height).prop('width', data.published_width); //use json width & height
