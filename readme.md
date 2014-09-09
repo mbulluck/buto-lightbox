@@ -41,6 +41,19 @@ Function will use basic dimensions that you've set of the container element
 
 **NB** Don't include the /src folder in your project, it's just there for you to browse through and debug with.
 
+advanced usage:
+
+    <div class='buto-lightbox-here' data-id='12345' style='width:451px;height:254px'>Buto Poster frame goes in here</div>
+
+    $('div.buto-lightbox-here').butoLightbox({
+        title:'video'
+    });
+
+A config of options can be injected at the point of instantiation.
+
+List of advanced properties that can be set:
+*   `title` Set the title. Accepted values: `media` | `video`. Defaults to `media` title
+
 Demo
 ----
 Have a look at /demo.html or http://butovideo.github.com/buto-lightbox/ for some basic demo usage
