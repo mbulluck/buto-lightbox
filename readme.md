@@ -49,7 +49,7 @@ advanced usage:
         title:'video'
     });
 
-A config of options can be injected at the point of instantiation.
+A config of options can be injected in at the point of instantiation.
 
 List of advanced properties that can be set:
 *   `title` Set the title. Accepted values: `media` | `video`. Defaults to `media` title
