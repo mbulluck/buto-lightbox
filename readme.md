@@ -53,6 +53,8 @@ A config of options can be injected in at the point of instantiation.
 
 List of advanced properties that can be set:
 *   `title` Set the title. Accepted values: `media` | `video`. Defaults to `media` title
+*   `class_name` Set the class applied to the div we use this to namespace our css. Defaults to `buto-lightbox-container`
+*   `play_icon` Set the img used for the play icon. Must be a valid url
 
 Demo
 ----
