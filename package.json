@@ -1,0 +1,23 @@
+{
+    "name": "buto-lightbox",
+    "title": "Buto Lightbox",
+    "description": "Our Lightbox plugin",
+    "version": "0.1.0",
+    "main": "dist/buto-lightbox.min.js",
+    "homepage": "https://github.com/ButoVideo/buto-lightbox",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:ButoVideo/buto-lightbox.git"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "load-grunt-tasks": "0.3.0",
+        "grunt": "0.4.2",
+        "grunt-cli": "0.1.13",
+        "grunt-contrib-concat": "0.3.0",
+        "grunt-contrib-jshint": "0.8.0",
+        "grunt-contrib-uglify": "0.3.2",
+        "grunt-contrib-watch": "0.5.3",
+        "grunt-jsonlint": "1.0.4"
+    }
+}
