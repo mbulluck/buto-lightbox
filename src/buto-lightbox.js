@@ -49,7 +49,7 @@
     $.fn.butoLightbox = function (options) {
         var settings = $.extend({// Create some defaults, extending them with any options that were provided
             api_uri: '//api.buto.tv/v2/video',
-            play_icon: 'https://buto.secure.footprint.net/butotv/live/static/buto/img/html_5_embed_play_icon_60x60.png',
+            play_icon: 'https://d3lkew8zknjt1t.cloudfront.net/butotv/live/static/buto/img/html_5_embed_play_icon_60x60.png',
             class_name: 'buto-lightbox-container'
         }, options);
         return this.each(function () {
