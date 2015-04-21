@@ -25,31 +25,31 @@ Demo for Buto lightbox js which is a lightbox based integration of the buto plat
         </style>
 
         <!-- required -->
-        <link rel="stylesheet" type="text/css" href="css/buto-lightbox.css" media="screen" /> 
+        <link rel="stylesheet" type="text/css" href="css/buto-lightbox.css" media="screen" />
         <!-- required -->
 
-		
-		<script type="text/javascript">
+
+		<script>
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-39479647-1']);
 		  _gaq.push(['_trackPageview']);
 		</script>
     </head>
-    <body>        
+    <body>
         <div class='content'>
 
             <div id='content' class="center">
 				<div style='margin:0 auto;float:right;padding-top:10px'><a href='http://get.buto.tv' title="Buto is an enterprise online video platform"><img src='buto_logo.png' alt='buto enterprise online video platform'/></a></div>
 				<div class='clearfix'></div>
-                <h1><a href='https://github.com/ButoVideo/buto-lightbox'>Buto Lightbox Video Embed jQuery plugin</a></h1>
+                <h1><a href='//github.com/ButoVideo/buto-lightbox'>Buto Lightbox Video Embed jQuery plugin</a></h1>
 
-				<p><a href='https://github.com/ButoVideo/buto-lightbox'>https://github.com/ButoVideo/buto-lightbox</a></p>
+				<p><a href='//github.com/ButoVideo/buto-lightbox'>https://github.com/ButoVideo/buto-lightbox</a></p>
                 <p class='my-title'>Brian's Buto</p>
                 <div class='buto-lightbox-here-please' data-id='12345'><!-- video here --></div>
                 <p>The Buto lightbox embed plugin has been created and tested with jQuery 1.7.2 to 1.9.1.  It will search the page for any elements (usually divs) that you specify which have a Buto video id (eg 12345) .  It will then talk to the Buto API and get the poster frames for that video.  When you click on the poster frame you'll get a lightbox (courtesy of <a href="https://github.com/jackmoore/colorbox/">jackmoore</a>) with the video in in.
 				 The script will detect the size of the div and resize the poster frame accordingly.</p>
                 <p>It's lightweight and fast, designed to be async and not block DOM render (in a much as is possible)</p>
-                
+
                 <h2>Usage</h2>
                 <p>Ensure you have jquery 1.7x or above loaded first, it may work fine with earlier versions but is untested as such</p>
                 <script src="https://gist.github.com/ButoVideo/5194682.js"></script>
@@ -62,30 +62,30 @@ Demo for Buto lightbox js which is a lightbox based integration of the buto plat
                 <div class='buto-lightbox-here-please' data-id='mmV6l'><!-- video here --></div>
                 <p class='my-title'>Akaal on a beach (HzLmM)</p>
                 <div class='buto-lightbox-here-please' data-id='HzLmM'><!-- video here --></div>
-                <br/>                
+                <br/>
             </div>
         </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- make sure you have jquery loaded before you load the buto plugin-->
-        
+
         <!-- required -->
-        <script src="js/buto-lightbox.min.js" ></script> 
+        <script src="//raw.githubusercontent.com/ButoVideo/buto-lightbox/master/dist/buto-lightbox.min.js" ></script>
         <!-- required -->
-        
+
         <script>
             $(document).ready(function() { //best to wait for DOM ready
-                //use the css selector of choice to pick up your elements               
+                //use the css selector of choice to pick up your elements
                 $('div.buto-lightbox-here-please').butoLightbox();
 				  (function() {
 					var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
 					ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 					var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-				  })();				
+				  })();
             });
         </script>
         <footer>
             <div class="center">
-                <a href="http://get.buto.tv/">Buto</a> | <a href="https://github.com/ButoVideo">Github</a> | <a href="http://opensource.org/licenses/MIT">License</a>
+                <a href="//get.buto.tv/">Buto</a> | <a href="//github.com/ButoVideo">Github</a> | <a href="//opensource.org/licenses/MIT">License</a>
             <div>
         </footer>
     </body>
